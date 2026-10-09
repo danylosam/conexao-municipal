@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   ArrowRight,
@@ -331,7 +333,7 @@ export default function HomePage() {
             <Link href="/login" className="transition hover:text-blue-700">Entrar</Link>
             <Link href="/register" className="transition hover:text-blue-700">Cadastrar</Link>
           </div>
-          <p className="text-xs text-slate-400">© {new Date().getFullYear()} Conexão Municipal</p>
+          <p className="text-xs text-slate-400">© 2026 Conexão Municipal. Todos os direitos reservados.</p>
         </div>
       </footer>
     </main>
