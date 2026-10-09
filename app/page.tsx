@@ -13,7 +13,6 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -190,12 +189,12 @@ export default function HomePage() {
             <a href="#sobre" className="text-sm font-medium text-slate-600 transition hover:text-blue-700">Sobre a plataforma</a>
           </div>
           <div className="flex items-center gap-2">
-            <Button asChild variant="ghost" className="rounded-xl text-slate-700 transition-all duration-300 hover:-translate-y-0.5 hover:text-blue-700">
-              <Link href="/login">Entrar</Link>
-            </Button>
-            <Button asChild className="rounded-xl bg-blue-600 shadow-md shadow-blue-600/15 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lg">
-              <Link href="/register">Cadastrar</Link>
-            </Button>
+            <Link href="/login" className="inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium text-slate-700 transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-100 hover:text-blue-700">
+              Entrar
+            </Link>
+            <Link href="/register" className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-md shadow-blue-600/15 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lg">
+              Cadastrar
+            </Link>
           </div>
         </nav>
       </header>
@@ -218,12 +217,12 @@ export default function HomePage() {
               Conecte cidadãos e Prefeitura num só lugar. Os relatos chegam com facilidade, a IA organiza cada demanda e a gestão acompanha a resolução.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button asChild size="lg" className="h-12 rounded-2xl bg-blue-600 px-6 shadow-lg shadow-blue-600/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/25">
-                <Link href="/register">Comece agora <ArrowRight className="ml-2 size-4" /></Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="h-12 rounded-2xl border-slate-200 bg-white/80 px-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-200 hover:bg-white">
-                <a href="#como-funciona">Conheça a plataforma</a>
-              </Button>
+              <Link href="/register" className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-blue-600 px-6 text-sm font-medium text-white shadow-lg shadow-blue-600/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/25">
+                Comece agora <ArrowRight className="size-4" />
+              </Link>
+              <a href="#como-funciona" className="inline-flex h-12 items-center justify-center rounded-2xl border border-slate-200 bg-white/80 px-6 text-sm font-medium text-slate-900 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-200 hover:bg-white">
+                Conheça a plataforma
+              </a>
             </div>
             <div className="mt-8 flex items-center gap-3 text-sm text-slate-500">
               <span className="flex -space-x-2" aria-hidden="true">
@@ -318,9 +317,9 @@ export default function HomePage() {
             <p className="text-sm font-semibold text-blue-200">A sua cidade pode conectar-se melhor.</p>
             <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Vamos aproximar pessoas e gestão?</h2>
           </div>
-          <Button asChild size="lg" className="rounded-2xl bg-white text-blue-700 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-lg">
-            <Link href="/register">Conheça a plataforma <ArrowRight className="ml-2 size-4" /></Link>
-          </Button>
+          <Link href="/register" className="inline-flex h-11 items-center justify-center gap-2 rounded-2xl bg-white px-6 text-sm font-medium text-blue-700 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-lg">
+            Conheça a plataforma <ArrowRight className="size-4" />
+          </Link>
         </div>
       </section>
 
